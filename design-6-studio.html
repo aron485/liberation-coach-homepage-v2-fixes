@@ -12,10 +12,12 @@ h1,h2,h3{margin:0;font-weight:600;letter-spacing:-.02em;line-height:1.12}
 a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
 .wrap{max-width:1180px;margin:0 auto;padding:0 40px}
 .kick{font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--clay);margin:0 0 18px}
-.btn{display:inline-block;background:var(--forest);color:#fff;padding:15px 30px;border-radius:40px;font-weight:600;font-size:15px;transition:.2s;box-shadow:0 8px 24px rgba(47,74,68,.25)}
-.btn:hover{background:#263c37;transform:translateY(-2px)}
+.btn{display:inline-block;background:var(--clay);color:#fff;padding:15px 30px;border-radius:40px;font-weight:600;font-size:15px;transition:.2s;box-shadow:0 8px 24px rgba(168,90,52,.28)}
+.btn:hover{background:#8f4c2b;transform:translateY(-2px)}
 .btn-o{display:inline-block;border:1.5px solid var(--ink);color:var(--ink);padding:13px 28px;border-radius:40px;font-size:15px;font-weight:600}
 .btn-o:hover{background:var(--ink);color:var(--paper)}
+.qbtn{display:inline-block;border:1.5px solid rgba(47,74,68,.4);color:var(--forest);padding:9px 18px;border-radius:40px;font-size:13px;font-weight:650;transition:.2s}
+.qbtn:hover{border-color:var(--forest);background:rgba(47,74,68,.07)}
 .link{color:var(--clay);font-weight:650;font-size:15px;border-bottom:1.5px solid rgba(168,90,52,.45);padding-bottom:3px}
 .navtoggle{display:none}
 .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:9px;border:1px solid var(--line);border-radius:8px;background:#fff}
@@ -25,9 +27,9 @@ a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
 .nav{position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:16px 40px;background:rgba(247,244,239,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .logo{font-size:21px;font-weight:650}.logo span{color:var(--clay)}
 .menu{display:flex;gap:26px;align-items:center;font-size:14px;color:var(--body);font-weight:500}.menu a:hover{color:var(--ink)}
-.menu .apply{color:#fff;background:var(--forest);padding:10px 22px;border-radius:40px}
+.menu .apply{color:#fff;background:var(--clay);padding:10px 22px;border-radius:40px}
 /* hero */
-.hero{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;padding:72px 0 86px}
+.hero{display:grid;grid-template-columns:1.02fr .98fr;gap:56px;align-items:center;padding:72px 40px 86px}
 .hero h1{font-size:clamp(38px,4.6vw,60px)}
 .hero .sub{color:var(--body);font-size:18px;max-width:46ch;margin:24px 0 0}
 .hero .pull{background:var(--white);border-left:3px solid var(--sage);border-radius:0 12px 12px 0;padding:16px 20px;margin:24px 0;box-shadow:var(--soft);font-size:16px;max-width:44ch}
@@ -74,7 +76,7 @@ section{padding:84px 0}
 /* steps */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:8px}
 .step{background:var(--white);border-radius:20px;padding:34px 30px;box-shadow:var(--soft)}
-.step .n{width:46px;height:46px;border-radius:14px;background:var(--sage);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px}
+.step .n{width:46px;height:46px;border-radius:14px;background:#5c7268;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:18px}
 .step h3{font-size:20px;margin:18px 0 10px}
 .step p{color:var(--body);font-size:15px;margin:0}
 /* qa */
@@ -83,7 +85,7 @@ section{padding:84px 0}
 .qa dt{font-size:19px;font-weight:600;margin-bottom:8px}
 .qa dd{margin:0;color:var(--body);font-size:16px}
 /* final */
-.final{padding:30px 0 90px}
+.final{padding:30px 0 24px}
 .final .box{background:var(--forest);color:#fff;border-radius:28px;padding:80px 40px;text-align:center;box-shadow:var(--soft);position:relative;overflow:hidden}
 .final h2{font-size:clamp(28px,3.6vw,46px);color:#fff;max-width:18ch;margin:0 auto 20px}
 .final p{color:#d6e0db;font-size:17px;margin:0 auto 28px;max-width:52ch}
@@ -104,7 +106,7 @@ footer{background:var(--ink);color:#c7cfca;padding:58px 0 40px}
   .menu a{padding:13px 0;border-bottom:1px solid var(--line);color:var(--ink);font-size:15px}
   .menu .apply{margin-top:12px;text-align:center;border-bottom:0;color:#fff}
   .navtoggle:checked ~ .menu{display:flex}
-  .hero{grid-template-columns:1fr;gap:34px;padding:44px 0}.hero-media .float{left:12px}
+  .hero{grid-template-columns:1fr;gap:34px;padding:44px 22px}.hero-media .float{left:12px}
   .routes{grid-template-columns:1fr}
   .fbi{grid-template-columns:1fr;gap:28px}.fbi.rev .pic{order:0}
   .vic{grid-template-columns:1fr;gap:26px}.steps{grid-template-columns:1fr}
@@ -155,7 +157,7 @@ footer{background:var(--ink);color:#c7cfca;padding:58px 0 40px}
       <div class="cbody">
         <h3>For founders and business owners</h3>
         <p>Leading a business can put you between a decision and the people who need an answer. You might be postponing feedback to a colleague or deciding which responsibilities to hand over. Start with a situation in your business and the response you want to change.</p>
-        <a href="#" class="link">Explore founder coaching →</a>
+        <a href="#" class="qbtn">Explore founder coaching</a>
       </div>
     </div>
     <div class="card">
@@ -163,7 +165,7 @@ footer{background:var(--ink);color:#c7cfca;padding:58px 0 40px}
       <div class="cbody">
         <h3>For adult athletes</h3>
         <p>You may trust a skill in practice and begin to doubt it in competition. Pressure can pull your concentration toward the last mistake or what might happen next. Start with a moment when your focus or confidence changed and what you noticed.</p>
-        <a href="#" class="link">Explore coaching for athletes →</a>
+        <a href="#" class="qbtn">Explore coaching for athletes</a>
       </div>
     </div>
   </div>
@@ -178,7 +180,7 @@ footer{background:var(--ink);color:#c7cfca;padding:58px 0 40px}
       <h2>Turn a broad concern into something you can work on.</h2>
       <p>You might call it a mental block: you keep second-guessing a decision or putting off a conversation. Start with that specific situation. What happened? What are you assuming it means? What do you need to find out before deciding?</p>
       <p>In performance coaching, you and Victor work together on those questions. Personal growth can mean a change you choose in your own life, such as asking a question you have avoided, checking an assumption or taking an action you chose.</p>
-      <p style="margin-top:6px"><a href="#" class="link">See what a session can involve →</a></p>
+      <p style="margin-top:6px"><a href="#" class="qbtn">See what a session can involve</a></p>
     </div>
   </div>
 </section>
@@ -207,7 +209,7 @@ footer{background:var(--ink);color:#c7cfca;padding:58px 0 40px}
       <p class="kick">The Emotional Side Of The Work</p>
       <h2>Reflection and emotional awareness</h2>
       <p>Victor's emotional-awareness teaching includes noticing bodily sensations associated with a feeling. His reflective questions examine the situation and your interpretation of it. The Method page explains these parts of his work in plain language.</p>
-      <p style="margin-top:6px"><a href="#" class="link">Understand Victor's approach →</a></p>
+      <p style="margin-top:6px"><a href="#" class="qbtn">Understand Victor's approach</a></p>
     </div>
   </div>
 </section>
@@ -220,7 +222,7 @@ footer{background:var(--ink);color:#c7cfca;padding:58px 0 40px}
     <div class="step"><div class="n">2</div><h3>Meet Victor on Zoom</h3><p>The next step is a discovery call with Victor to explore fit. There is no obligation to proceed with coaching.</p></div>
     <div class="step"><div class="n">3</div><h3>Decide whether to work together</h3><p>If you choose to begin coaching, sessions take place online and coaching members receive Circle access.</p></div>
   </div>
-  <div style="text-align:center;margin-top:30px"><a href="#" class="link">Explore 1:1 coaching →</a></div>
+  <div style="text-align:center;margin-top:30px"><a href="#" class="qbtn">Explore 1:1 coaching</a></div>
 </section>
 
 <!-- QUICK ANSWERS -->
@@ -230,7 +232,7 @@ footer{background:var(--ink);color:#c7cfca;padding:58px 0 40px}
     <div class="i"><dt>Are sessions online?</dt><dd>Yes. Coaching sessions take place online.</dd></div>
     <div class="i"><dt>Is Circle access included?</dt><dd>Yes. All coaching members receive Circle access.</dd></div>
     <div class="i"><dt>What happens after I apply?</dt><dd>The next step is a discovery Zoom call with Victor. There is no obligation to proceed with coaching.</dd></div>
-    <div class="i"><dt>Have more questions?</dt><dd><a href="#" class="link">Read common questions →</a></dd></div>
+    <div class="i"><dt>Have more questions?</dt><dd><a href="#" class="qbtn">Read common questions</a></dd></div>
   </dl>
 </section>
 
